@@ -1,0 +1,149 @@
+#menu{
+    width:180px;
+    height:180px;
+    border-radius: 50%;
+    transform:translate(-90px,-90px);
+    background-color: hotpink;
+    /* position:relative; */
+}
+.sticky-menu{
+    position:sticky;
+    top:0;
+}
+body{
+    background-color:rgb(197, 197, 197);
+    /* width:100%;
+    height:100%; */
+    margin:0;
+    overflow-x:hidden;
+}
+#menu-option{
+    display:flex;
+}
+#open-menu{
+    background-image: url("images/menu.png");
+    width:30px;
+    height:30px;
+    background-size: cover;
+    background-position: center;
+}
+#close-menu{
+    background-image: url("images/close.png");
+}
+#image{
+    width:1000px;
+    height:700px;
+    background-image: url("images/dog.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#container{
+    display: flex;
+    /* width:100%;
+    height:100%; */
+    flex-direction: column;
+    background-color: rgb(252, 255, 247);
+    width:100%;
+    height: 100%;
+}
+#content{
+    transform:translate(120px,-50px);
+}
+#menu-image{
+    width:30px;
+    height: 30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:10px;
+    margin-left:25px;
+}
+#close-image{
+    width:30px;
+    height: 30px;
+    position:absolute;
+    top:50%;
+    
+    margin-top:20px;
+    margin-left:25px;
+}
+.rotation{
+    transform-origin: top left;
+    transform: rotate(-20deg);
+    /* transform:rotate(-10deg); */
+}
+.menu-rotation{
+    transform-origin: top left;
+    transform: rotate(-90deg) ;
+    transition: 0.6s ease;
+}
+.menus{
+    /* bottom:200px; */
+    transform: translateX(-200%) translateY(100px);
+}
+.menu-detail{
+    width:25px;
+    height:25px;
+    margin-right:20px;
+    margin-left:10px;
+}
+.menu-detail-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-options-return{
+    transform:translate(-180px,-20px) rotate(15deg);
+    /* transform:rotate(15deg); */
+    
+}
+#author{
+    line-height:100%;
+    font-style:italic;
+    font-weight: 500;
+    font-size:15px;
+}
+#title{
+    font-size:30px;
+    font-weight:bolder;
+}
+#about{
+    position:absolute;
+    top:50px;
+    left:20px;
+}
+#contact{
+    position:absolute;
+    top:100px;
+    left:45px;
+}
+.opened-menus{
+    position:fixed;
+    bottom:150px;
+    transform: translateX(10px);
+    transition: transform 0.4s ease-in;
+}
+.appear-close{
+    transform:rotate(20deg) translateX(140%);
+    transition: 0.6s ease;
+}
+.menu-rerotation{
+    transform-origin: top left;
+    transform: rotate(90deg) ;
+    transition: 0.6s ease;
+}
+.rerotation{
+    transform-origin: top left;
+    transform: rotate(20deg);
+}
+.closed-menus{
+    transform: translateX(-10px);
+    transition: transform 0.4s ease-in;
+}
+.appear-menu{
+    transform:rotate(20deg) translateX(140%);
+    transition: 0.6s ease;
+}
+.disappear-close{
+
+}

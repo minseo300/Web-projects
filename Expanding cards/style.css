@@ -1,0 +1,75 @@
+.hidden{
+    display: none;
+}
+.text{
+    color:white;
+    padding-left:20px;
+    opacity: 1;
+    transition:opacity 0.3s ease-in 0.4s;
+}
+*{
+    box-sizing: border-box;
+}
+/* body{
+    height: 100vh;
+} */
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* height:700px; */
+    height:100vh;
+    
+}
+.container .item{
+    height:80vh;
+    width:100px;
+    border-radius: 50px;
+    /* border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px; */
+    background-position:center;
+    background-size:cover;
+    -webkit-transition: all 700ms ease-in;
+    margin:10px;
+    cursor:pointer;
+}
+#world{
+    background-image:url('images/world.jpg');
+    background-repeat: no-repeat;
+    /* margin-right:10px; */
+}
+#forest{
+    background-image:url('images/forest.jpg');
+    background-repeat: no-repeat;
+    /* margin:10px; */
+}
+#beach{
+    background-image:url('images/beach.jpg');
+    background-repeat: no-repeat;
+    /* margin:10px; */
+}
+#winter{
+    background-image:url('images/winter.jpg');
+    background-repeat: no-repeat;
+    
+    /* margin:10px; */
+   
+}
+#mountain{
+    background-image:url('images/mountain.jpg');
+    background-repeat: no-repeat;
+    
+    /* margin:10px; */
+   
+}
+.main{
+    flex:5;
+    /* flex-grow:10; */
+}
+.others{
+    flex-grow:0.1;
+}

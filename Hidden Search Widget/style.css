@@ -1,0 +1,7 @@
+body{
+    background-color: blueviolet;
+}
+#search{
+    background-image:url('images/search.jpg');
+    background-repeat:no-repeat;
+}

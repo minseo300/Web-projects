@@ -1,0 +1,75 @@
+body{
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress-container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin:0;
+   text-align: center;
+   overflow: hidden;
+   text-align: center;
+   position:relative;
+
+}
+.circle{
+    border:3px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    padding:3px;
+    width:22px;
+    height:22px;
+    transition: 0.6s ease;
+}
+.bar{
+    width:70px;
+    height:5px;
+    background-color: #dedede;
+    transition: 0.4s ease;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    margin:5px;
+    height: 30px;
+    width: 100%;
+    /* position:fixed; */
+    /* z-index: -1; */
+}
+.btn{
+    border-radius: 10px;
+    height: 30px;
+    width:60px;
+    box-shadow: 0 4px 6px rgb(50, 50, 93,0.11), 0 1px 3px rgb(0, 0, 0,0.08);
+    text-align: center;
+    margin:20px;
+    color: whitesmoke;
+    border:0;
+    background-color: gray;
+   
+    /* cursor:pointer; */
+}
+.active{
+    background-color: skyblue;
+}
+.circle-active{
+    border:3px solid skyblue;
+    
+    cursor:pointer;
+}
+.disabled{
+    cursor:not-allowed;
+}
